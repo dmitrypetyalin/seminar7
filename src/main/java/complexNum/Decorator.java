@@ -1,6 +1,7 @@
 package complexNum;
 
 /**
+ * Class is the adapter for Complex and Logger classes.
  * @author PetSoft
  * @date 05.04.2024 23:08
  */
@@ -8,6 +9,11 @@ public class Decorator implements iComplex {
     private Complex oldComplex;
     private Logger logger;
 
+    /**
+     * Class constructor.
+     * @param complex - instance of the Complex class.
+     * @param logger - instance of the Logger class.
+     */
     public Decorator(Complex complex, Logger logger) {
         this.oldComplex = complex;
         this.logger = logger;
